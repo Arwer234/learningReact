@@ -11,17 +11,17 @@ class App extends React.Component {
     return (
       <div className="all">
         <div id="header">
-          <img src={logo} alt="/" id="logo" />
-          <div className = "credentials">Jakub Filipowski</div>
-          <div className = "motto">To desing is to create new tomorrow</div>
+          <div id = "logo"></div>
+          <q className="motto">To desing is to create new tomorrow</q>
+          <div className="spacing"></div>
         </div>
 
-        <div>
+        <div className = "main">
           <Router>
             <div className="navbar">
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/projects">Projects</Link>
+              <Link style={{ color:"black", fontSize:"2em", textDecoration: 'none' }} className = "links" to="/">Home</Link>
+              <Link style={{ color:"black", fontSize:"2em", textDecoration: 'none' }} className = "links" to="/about">About</Link>
+              <Link style={{ color:"black", fontSize:"2em", textDecoration: 'none' }} to="/projects">Projects</Link>
             </div>
             <div className="content">
               <Route exact path="/" component={Home} />
@@ -30,7 +30,6 @@ class App extends React.Component {
             </div>
           </Router>
         </div>
-        <div className="footer">contacts</div>
       </div>
     );
   }

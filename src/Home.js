@@ -5,6 +5,7 @@ class Home extends React.Component {
         <div>
           <h1 className = "home">HOME</h1>
           <p>Here is the introduction</p>
+          <p>Here is the introduction</p><p>Here is the introduction</p>
         </div>
         
       );
