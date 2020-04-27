@@ -1,10 +1,29 @@
+@media all and (max-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+}
 .all{
     display:flex;
     flex-direction: column;
     width:90%;
     margin:0 auto;
-    height:100vh;
-    
+
+}
+.mid{
+    height:200%;
 }
 *{
     box-sizing: border-box;
@@ -19,7 +38,7 @@
     justify-content: center;
 }
 .main img{
-    width:70%;
+    width:80%;
     
     border-radius: 10px;
 }
@@ -29,7 +48,7 @@
 .navbar{
     display:flex;
     justify-content: space-around;
-    padding-top:10px;
+    padding-top:20px;
 }
 .greetings{
     margin-top:7%;
@@ -37,14 +56,47 @@
     flex-direction: column;
     justify-content: space-around;
 }
-#titleGreetings{
+.is-main-header{
     text-align: center;
-    font-size:2.5em;
+    font-size:2.8rem;
     font-weight:bold;
     margin-bottom: 1%;
 }
 #subtitleGreetings{
-    font-size:1.6em;
+    font-size:1.6rem;
     text-align:center;
     margin-bottom:5%;
+    letter-spacing: 0.1em;
+}
+.description{
+    background-color: rgb(93,95,255);
+    color:white;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding:100px 0px 100px 0px;
+}
+.description *{
+    text-align:center;
+    padding:20px;
+
+}
+.descriptionHeader{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+.descriptionContent{
+    margin:0 auto;
+    width:80%;
+    font-size:1.2rem;
+    text-align: center;
+    word-break: keep-all;
+}
+.skills{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }

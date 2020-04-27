@@ -22,13 +22,27 @@ class App extends React.Component {
             </div>
           </div>
           <div className="greetings">
-            <div id="titleGreetings">Designer of React & ReactNative Apps</div>
-            <div id="subtitleGreetings">I create simple things, that give tons of satisfaction</div>
+            <div className="is-main-header">Designer of React & ReactNative Apps</div>
+            <div id="subtitleGreetings">Aesthetic look makes your life easier</div>
           </div>
           <div className="main">
             <img src="https://miro.medium.com/max/6044/1*SAn3UosXBPpt-1H-3VdLMw.jpeg" alt="/" />
           </div>
-          <div className="footer"></div>
+        </div>
+        <div className="mid">
+          <div className="description">
+            <span className="descriptionHeader">Hi! I'm Kuba. Very pleased!</span>
+            <span className="descriptionContent">I started to code around 2 years ago
+            in high school, and thanks to wonderful teachers it was easy to begin the
+            journey. Through the first little projects, games, like battleship,
+            tic tac toe, MP3 player (combined with database), to more complex things
+            like hexGame (with threejs), RPG game "Dratewka" and Monopoly. Now I
+            learn and design webApps, that have to be simple and transparent.</span>
+          </div>
+        </div>
+        <div className = "skills">
+          <div className = "is-main-header">Skills</div>
+          <div className = "tiles"></div>
         </div>
       </div>
 
