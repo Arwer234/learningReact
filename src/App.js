@@ -4,32 +4,30 @@ import Home from "./Home"
 import About from "./About"
 import logo from "./logo.png"
 import Projects from "./Projects"
+import Button from "./Button"
 import "./App.css"
 
 class App extends React.Component {
   render() {
     return (
       <div className="all">
-        <div id="header">
-          <div id = "logo"></div>
-          <q className="motto">To desing is to create new tomorrow</q>
-          <div className="spacing"></div>
+        <div className = "navbar">
+          <div className = "logo">
+            <img src = "https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" alt = "/"/>
+          </div>
+          <div className = "navigation">
+            <Button text = "Projects"/>
+            <Button text = "Contact"/>
+          </div>
         </div>
-
+        <div className = "greetings">
+          <div id = "titleGreetings">Hi! I'm Kuba and I design things</div>
+          <div id = "subtitleGreetings">To design is to be free</div>
+        </div>
         <div className = "main">
-          <Router>
-            <div className="navbar">
-              <Link style={{ color:"black", fontSize:"2em", textDecoration: 'none' }} className = "links" to="/">Home</Link>
-              <Link style={{ color:"black", fontSize:"2em", textDecoration: 'none' }} className = "links" to="/about">About</Link>
-              <Link style={{ color:"black", fontSize:"2em", textDecoration: 'none' }} to="/projects">Projects</Link>
-            </div>
-            <div className="content">
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/projects" component={Projects} />
-            </div>
-          </Router>
+          <img src = "https://miro.medium.com/max/6044/1*SAn3UosXBPpt-1H-3VdLMw.jpeg" alt = "/"/>
         </div>
+        <div className = "footer"></div>
       </div>
     );
   }
