@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from "./Home"
-import About from "./About"
-import logo from "./logo.png"
-import Projects from "./Projects"
 import Button from "./Button"
+import TileList from "./TileList"
 import "./App.css"
+import Tile from "./Tile";
 
 class App extends React.Component {
   render() {
@@ -42,7 +40,7 @@ class App extends React.Component {
         </div>
         <div className = "skills">
           <div className = "is-main-header">Skills</div>
-          <div className = "tiles"></div>
+          <TileList/>
         </div>
       </div>
 
