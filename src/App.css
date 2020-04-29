@@ -18,7 +18,6 @@
 .all{
     display:flex;
     flex-direction: column;
-    width:90%;
     margin:0 auto;
 
 }
@@ -40,11 +39,11 @@
 }
 .main img{
     width:80%;
-    
-    border-radius: 10px;
+    padding:0;
 }
 .logo img{
     width:10%;
+    min-width: 70px;
 }
 .navbar{
     display:flex;
@@ -52,7 +51,7 @@
     padding-top:20px;
 }
 .greetings{
-    margin-top:7%;
+    margin-top:7rem;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -61,43 +60,56 @@
     text-align: center;
     font-size:2.8rem;
     font-weight:bold;
-    margin-bottom: 1%;
+    margin-bottom: 2rem;
 }
 #subtitleGreetings{
+    max-width:80%;
     font-size:1.6rem;
     text-align:center;
-    margin-bottom:5%;
+    margin:0 auto;
+    margin-bottom:10rem;
     letter-spacing: 0.1em;
 }
 .description{
     background-color: rgb(93,95,255);
     color:white;
-    width:80%;
+    width:100%;
     margin:0 auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    padding:100px 0px 100px 0px;
+    padding:3% 0px 3% 0px;
 }
 .description *{
     text-align:center;
-    padding:20px;
 
 }
 .descriptionHeader{
-    font-size:1.8rem;
+    font-size:2rem;
     font-weight:bold;
+    padding:3%;
+    
 }
 .descriptionContent{
     margin:0 auto;
     width:80%;
+    line-height: 2rem;
     font-size:1.2rem;
     text-align: center;
     word-break: keep-all;
+    padding:3%;
 }
 .skills{
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+.footer{
+    background-color: rgb(93,95,255);
+    width:100%;
+    padding:10px;
+    text-align:right;
+    color:white;
+    margin:0 auto;
+    font-size:0.8rem;
 }

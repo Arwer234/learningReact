@@ -12,10 +12,9 @@ class App extends React.Component {
         <div className="upper">
           <div className="navbar">
             <div className="logo">
-              <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" alt="/" />
+              <a href = "https://github.com/Arwer234"><img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="/" /></a>
             </div>
             <div className="navigation">
-              <Button text="Projects" />
               <Button text="Contact" />
             </div>
           </div>
@@ -24,7 +23,7 @@ class App extends React.Component {
             <div id="subtitleGreetings">Aesthetic look makes your life easier</div>
           </div>
           <div className="main">
-            <img src="https://miro.medium.com/max/6044/1*SAn3UosXBPpt-1H-3VdLMw.jpeg" alt="/" />
+            <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="/" />
           </div>
         </div>
         <div className="mid">
@@ -41,6 +40,9 @@ class App extends React.Component {
         <div className = "skills">
           <div className = "is-main-header">Skills</div>
           <TileList/>
+        </div>
+        <div className = "footer">
+        © 2020 copyright Jakub Filipowski
         </div>
       </div>
 

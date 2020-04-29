@@ -11,6 +11,7 @@
     font-weight: 500;
     margin-right:5px;
     letter-spacing: 0.1em;
+    height:3.5rem;
 }
 .myButton:hover{
     color:#ffffff;
