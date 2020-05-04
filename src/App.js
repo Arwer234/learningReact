@@ -66,7 +66,7 @@ class App extends React.Component {
         </div>
         <div className = "projects">
           <div className = "is-main-header">Projects</div>
-          <ProjectList projects = {[]}/>
+          <ProjectList/>
         </div>
         <div className = "footer">
         © 2020 copyright Jakub Filipowski

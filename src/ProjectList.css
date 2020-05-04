@@ -1,0 +1,4 @@
+.projectList{
+    display:flex;
+    flex-direction: column;
+}
