@@ -1,5 +1,41 @@
+
+@media all and (max-width: 2000px) {
+    
+    .projectPicture{
+        width:30%;
+        margin:0 auto;
+    }
+    .projectDescription{
+        width:60%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .projectPicture{
+        width:90%;
+        margin:0 auto;
+    }
+    .projectDescription{
+        width:90%;
+    }
+}
 .projectLine{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgb(93,95,255);
+    padding:2rem;
+    margin-bottom:1rem;
+}
+.projectDescription{
+    color:white;
+    line-height: 2rem;
+    font-size:1.2rem;
+    text-align: center;
+    word-break: keep-all;
+    padding:3%;
+    margin:0 auto;
+}
+img{
+    width:100%;
 }

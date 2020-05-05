@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Project.css"
 
 export default class Project extends Component {
     constructor(props){
@@ -14,7 +15,8 @@ export default class Project extends Component {
                     <img src = {this.props.src[this.props.data.id]} alt = "/"/>
                 </div>
                 <div className = "projectDescription">
-                    {data.description}
+                    <div className = "descriptionHeader">{data.name}</div>
+                    <div className = "descriptionContent">{data.description}</div>
                 </div>
             </div>
         }
@@ -22,7 +24,8 @@ export default class Project extends Component {
             var layer = 
             <div className = "projectLine">
                 <div className = "projectDescription">
-                {data.description}
+                    <div className = "descriptionHeader">{data.name}</div>
+                    <div className = "descriptionContent">{data.description}</div>
                 </div>
                 <div className = "projectPicture">
                     <img src = {this.props.src[this.props.data.id]} alt = "/"/>

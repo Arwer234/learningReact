@@ -57,7 +57,8 @@ class App extends React.Component {
             journey. Through the first little projects, games, like battleship,
             tic tac toe, MP3 player (combined with database), to more complex things
             like hexGame (with threejs), RPG game "Dratewka" and Monopoly. Now my goal is to
-            design webApps, that have to be simple and transparent. If you are looking for open-minded designer, I'm in!</span>
+            design webApps, that have to be simple and transparent. If you are looking for open-minded designer,
+            that's not afraid of bigger algorithms also, I'm in!</span>
           </div>
         </div>
         <div className = "skills">
