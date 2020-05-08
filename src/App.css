@@ -136,3 +136,30 @@
     margin:0 auto;
     font-size:0.5rem;
 }
+.contact{
+    display:flex;
+    width:90%;
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    padding:3%;
+}
+.credentials, .message{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    padding:1rem;
+}
+.credentials *{
+    width:50%;
+    padding:1rem;
+}
+.message{
+    width:100%;
+}
+.message *{
+    width:100%;
+    padding:1rem;
+    resize: none;
+}
