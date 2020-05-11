@@ -12,7 +12,8 @@ export default class Project extends Component {
             var layer = 
             <div className = "projectLine">
                 <div className = "projectPicture">
-                    <img src = {this.props.src[this.props.data.id]} alt = "/"/>
+                    <a href = "http://localhost:3001"><img src = {this.props.src[this.props.data.id]} alt = "/"/></a>
+                    
                 </div>
                 <div className = "projectDescription">
                     <div className = "descriptionHeader">{data.name}</div>
