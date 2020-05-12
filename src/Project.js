@@ -8,12 +8,11 @@ export default class Project extends Component {
     render() {
         const layout = this.props.layout
         var data = this.props.data
-        console.log(this.props)
         if(layout == "left"){
             var layer = 
             <div className = "projectLine">
                 <div className = "projectPicture">
-                    <a href = {this.props.page}><img src = {this.props.src[this.props.data.id]} alt = "/"/></a>
+                    <a href = {data.page}><img src = {this.props.src[this.props.data.id]} alt = "/"/></a>
                     
                 </div>
                 <div className = "projectDescription">
@@ -30,7 +29,7 @@ export default class Project extends Component {
                     <div className = "descriptionContent">{data.description}</div>
                 </div>
                 <div className = "projectPicture">
-                    <img src = {this.props.src[this.props.data.id]} alt = "/"/>
+                    <a href = {data.page}><img src = {this.props.src[this.props.data.id]} alt = "/"/></a>
                 </div>
             </div>
         }
