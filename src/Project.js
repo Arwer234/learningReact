@@ -8,6 +8,7 @@ export default class Project extends Component {
     render() {
         const layout = this.props.layout
         var data = this.props.data
+        console.log(this.props.page)
         if(layout == "left"){
             var layer = 
             <div className = "projectLine">
