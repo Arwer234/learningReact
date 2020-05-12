@@ -4,12 +4,14 @@ export const ProjectData = {
             id:0,
             name:"Lego",
             src: "/lego.png",
+            page:"lego.jfilipowski.pl",
             description: "Project based on three.js, which enables you to have fun building different structures with your friends. Changes you made are sent to server via websockets, then it sends to other clients the data."
         },
         {
             id:1,
             name:"Checkers",
             src:"/checkers.png",
+            page:"checkers.jfilipowski.pl",
             description:"Typical multiplayer board game created with three.js. Server is responsible for sending the current board status. Gaining points currently under developement."
         },
         {
