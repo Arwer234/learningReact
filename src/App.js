@@ -69,7 +69,7 @@ class App extends React.Component {
             <div className="description">
               <span className="descriptionHeader">Projects</span>
               <span className="descriptionContent">Project below are mostly based on 3D ideas. During the developement
-              process I discovered, that both frontend and backend come in handy when it comes to creating
+              process I discovered that both frontend and backend come in handy when it comes to creating
               apps I imagine, thus I strive to learn both JS frameworks, as well as Node JS's.
               
               </span>

@@ -1,16 +1,21 @@
 
 @media all and (max-width: 2000px) {
-    
-    .projectPicture{
+    .projectLine{
         width:30%;
+    }
+    .projectPicture{
+        width:60%;
         margin:0 auto;
     }
     .projectDescription{
-        width:60%;
+        width:960%;
     }
 }
 
 @media all and (max-width: 1200px) {
+    .projectLine{
+        width:90%;
+    }
     .projectPicture{
         width:90%;
         margin:0 auto;
