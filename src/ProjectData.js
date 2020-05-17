@@ -19,21 +19,21 @@ export const ProjectData = {
             name:"Hex",
             src:"/hex_1.png",
             page:"http://hex.jfilipowski.pl",
-            description:"The most complex gameish project I created so far. At first, you can create your own map layout, select which hexes will contain certain elements. Later, you can enter three.js generated map, where you can move your hero and interact with another objects."
+            description:"First, you can create your own map layout, select which hexes will contain certain elements. Later, you can enter three.js generated map, where you can move your hero and interact with another objects."
         },
         {
             id:3,
             name:"Click'n'slide",
             src:"/clicknslide.png",
             page:"http://projects.jfilipowski.pl/clicknslide",
-            description:"Simple plain JS game, where you can put the pieces of images into correct picture. Your best times are kept in cookies."
+            description:"Plain JS game, where you can put the pieces of images into correct picture. Your best times are kept in cookies."
         },
         {
             id:4,
             name:"Battleships",
             src:"/statki.png",
             page:"http://projects.jfilipowski.pl/statki",
-            description:"My first game in JS. The rules are simple - put your ships on the map, shoot all the enemy ships."
+            description:"The rules are simple - put your ships on the map, shoot all the enemy ships."
         },
         {
             id:5,
@@ -47,7 +47,7 @@ export const ProjectData = {
             name:"Dratewka",
             src:"/dratewka.png",
             page:"http://projects.jfilipowski.pl/dratewka",
-            description:"The originator of this game in web language is Maciej Mendela, my former JS teacher. It's an JavaScript RPG game, your goal is to kill the dragon with materials you find. It's a port from Atari console, renowned in 90's in Poland."
+            description:"JavaScript RPG game, your goal is to kill the dragon with materials you find. It's a port from Atari console, credits to Maciej Mendela"
         }
     ]
 }

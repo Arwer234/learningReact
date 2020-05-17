@@ -20,7 +20,7 @@ export default class ProjectList extends Component {
     render() {
         var content = [];
         for(let i = 0;i<ProjectData.data.length;i++){
-            if (i%2==0){
+            if (i%2===0){
                 content.push(<Project layout = "left" data = {ProjectData.data[i]} src = {this.state.imgs}/>)
             }
             else{
