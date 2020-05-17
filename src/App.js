@@ -66,7 +66,14 @@ class App extends React.Component {
             <TileList />
           </div>
           <div className="projects">
-            <div className="is-main-header">Projects</div>
+            <div className="description">
+              <span className="descriptionHeader">Projects</span>
+              <span className="descriptionContent">Project below are mostly based on 3D ideas. During the developement
+              process I discovered, that both frontend and backend come in handy when it comes to creating
+              apps I imagine, thus I strive to learn both JS frameworks, as well as Node JS's.
+              
+              </span>
+            </div>
             <ProjectList />
           </div>
           <div className="contact">
