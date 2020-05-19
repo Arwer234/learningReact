@@ -101,6 +101,9 @@ class App extends React.Component {
                 <a href="https://github.com/Arwer234">
                   <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="/" />
                 </a>
+                <a href = "https://www.linkedin.com/in/jakub-filipowski-9615231aa/">
+                  <img src = "https://image.flaticon.com/icons/png/512/61/61109.png" alt = "linkedin"/>
+                </a>
               </div>
               <div className="navigation">
                 <Button text="Contact" />
