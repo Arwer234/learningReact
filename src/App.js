@@ -75,7 +75,7 @@ class App extends React.Component {
   sendForm = () =>{
     console.log(this.state.email,this.state.name,this.state.message)
     fetch('http://localhost:3004/mail',{
-        method: "GET",
+        method: "POST",
         body: JSON.stringify(this.state),
         headers: {
           'Accept': 'application/json',
