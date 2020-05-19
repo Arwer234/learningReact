@@ -9,7 +9,13 @@ import { Scrollbars } from 'react-custom-scrollbars';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { width: 0, height: 0 };
+    this.state = { 
+      width: 0, 
+      height: 0,
+      email:"",
+      name:"",
+      message:"",
+    };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
@@ -24,6 +30,66 @@ class App extends React.Component {
 
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+  handleInputChange = (event) => {
+    const target = event.target;
+    this.setState({
+      [target.name]: target.value
+    });
+    
+  }
+  isFieldValidated = (event) =>{
+    const target = event.target;
+    if(target.name=="email"){
+      if(target.value.includes("@")){
+        document.getElementsByClassName("emailError")[0].innerHTML = ""
+        document.getElementsByClassName("emailError")[0].style.display = "none"
+      }
+      else{
+        document.getElementsByClassName("emailError")[0].innerHTML = "Please enter a valid email"
+        document.getElementsByClassName("emailError")[0].style.display = "block"
+      }
+
+    }
+    else if(target.name == "name"){
+      if(target.value.length>0){
+        document.getElementsByClassName("nameError")[0].innerHTML = ""
+        document.getElementsByClassName("nameError")[0].style.display = "none"
+      }
+      else{
+        document.getElementsByClassName("nameError")[0].innerHTML = "Please enter your name"
+        document.getElementsByClassName("nameError")[0].style.display = "block"
+      }
+    }
+    else if(target.name == "message"){
+      if(target.value.length>0){
+        document.getElementsByClassName("messageError")[0].innerHTML = ""
+        document.getElementsByClassName("messageError")[0].style.display = "none"
+      }
+      else{
+        document.getElementsByClassName("messageError")[0].style.display = "block"
+        document.getElementsByClassName("messageError")[0].innerHTML = "Please leave a message"
+      }
+    }
+  }
+  sendForm = () =>{
+    console.log(this.state.email,this.state.name,this.state.message)
+    fetch('http://localhost:3004/mail',{
+        method: "POST",
+        body: JSON.stringify(this.state),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      }).then(
+    	(response) => (response.json())
+       ).then((response)=>{
+      if (response.status === 'success'){
+        alert("Message Sent."); 
+      }else if(response.status === 'fail'){
+        alert("Message failed to send.")
+      }
+    })
   }
   render() {
     return (
@@ -78,13 +144,18 @@ class App extends React.Component {
           <div className="contact">
             <div className="is-main-header">Contact</div>
             <div className="credentials">
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
+              <input onBlur = {this.isFieldValidated} onChange = {this.handleInputChange} name = "name" type="text" placeholder="Name" value = {this.state.name}/>
+              <input onBlur = {this.isFieldValidated} onChange = {this.handleInputChange} name = "email" type="email" placeholder="Email" value = {this.state.email}/>
+            </div>
+            <div className="errors">
+              <div className = "nameError"></div>
+              <div className = "emailError"></div>
+              <div className = "messageError"></div>
             </div>
             <div className="message">
-              <textarea placeholder="Your message" rows="10" />
+              <textarea onBlur = {this.isFieldValidated} onChange = {this.handleInputChange} name = "message" placeholder="Your message" rows="10" value = {this.state.message}/>
             </div>
-            <Button text="Send!" />
+            <Button onClick = {this.sendForm} text="Send" />
           </div>
           <div className="footer">
             © 2020 copyright Jakub Filipowski

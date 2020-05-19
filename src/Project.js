@@ -10,7 +10,7 @@ export default class Project extends Component {
         return (
             <figure className = "projectTile">
                 <img className = "projectImg"src = {this.props.src[this.props.data.id]} alt = "/"/>
-                <figcaption className = "projectCaption">{this.props.data.description}</figcaption>
+        <figcaption className = "projectCaption">{this.props.data.description}</figcaption>
             </figure>
         );
     }

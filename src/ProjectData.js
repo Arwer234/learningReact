@@ -12,14 +12,14 @@ export const ProjectData = {
             name:"Checkers",
             src:"/checkers.png",
             page:"http://checkers.jfilipowski.pl",
-            description:"Typical multiplayer board game created with three.js. Server is responsible for sending the current board status. Gaining points currently under developement."
+            description:"Multiplayer board game created with three.js. Server is responsible for sending the current board status. Currently under developement."
         },
         {
             id:2,
             name:"Hex",
             src:"/hex_1.png",
             page:"http://hex.jfilipowski.pl",
-            description:"First, you can create your own map layout, select which hexes will contain certain elements. Later, you can enter three.js generated map, where you can move your hero and interact with another objects."
+            description:"Create your map layout with different elements! Later, you can enter three.js generated map, where you can move your hero and interact with another objects."
         },
         {
             id:3,
@@ -33,14 +33,14 @@ export const ProjectData = {
             name:"Battleships",
             src:"/statki.png",
             page:"http://projects.jfilipowski.pl/statki",
-            description:"The rules are simple - put your ships on the map, shoot all the enemy ships."
+            description:"Rules are simple - put your ships on the map, shoot all the enemy ships."
         },
         {
             id:5,
             name:"MP3 Player",
             src:"/mp3.png",
             page:"http://mp3.jfilipowski.pl",
-            description:"Simple player, where you can choose from different albums and songs to listen. Whole app is created via mix of JQuery and plain NodeJS."
+            description:"Audio player, where you can choose from different albums and songs to listen. Whole app is created via mix of JQuery and plain NodeJS."
         },
         {
             id:6,
