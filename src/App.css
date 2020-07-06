@@ -65,12 +65,12 @@
     justify-content: center;
 }
 .main img{
-    width:70%;
+    width:60%;
     padding:0;
     border-radius: 200px;
 }
-.logo img{
-    width:10%;
+.logo a img{
+    width:100%;
     min-width: 70px;
     max-width:100px;
 }

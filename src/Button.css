@@ -1,13 +1,13 @@
 .myButton{
     
-    padding:15px;
+    padding:1rem;
     border:2px solid rgb(93,95,255);
     border-radius:30px;
     transition: all .3s ease-in-out;
     background-color: white;
     color:rgb(93,95,255);
     text-align:center;
-    
+    height:4rem;
 }
 .myButton:hover{
     color:#ffffff;

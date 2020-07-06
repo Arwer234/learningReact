@@ -13,25 +13,22 @@ import dratewka from "./dratewka.png"
 export default class ProjectList extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            imgs:[lego, checkers, hex, clicknslide, statki, mp3, dratewka]
+        var content = [];
+        var imgs = [lego, checkers, hex, clicknslide, statki, mp3, dratewka]
+        for(let i = 0;i<ProjectData.data.length;i++){
+            content.push(<Project data = {ProjectData.data[i]} src = {imgs} key = {i}/>)
         }
+        this.state = {
+            content:content
+        }
+        
     }
     render() {
-        var content = [];
-        for(let i = 0;i<ProjectData.data.length;i++){
-            if (i%2===0){
-                content.push(<Project layout = "left" data = {ProjectData.data[i]} src = {this.state.imgs}/>)
-            }
-            else{
-                content.push(<Project layout = "right" data = {ProjectData.data[i]} src = {this.state.imgs}/>)
-            }
-            
-        }
+        
         
         return (
             <div className = "projectList">
-                {content}
+                {this.state.content}
             </div>
         );
     }

@@ -40,7 +40,7 @@ class App extends React.Component {
   }
   isFieldValidated = (event) =>{
     const target = event.target;
-    if(target.name=="email"){
+    if(target.name==="email"){
       if(target.value.includes("@")){
         document.getElementsByClassName("emailError")[0].innerHTML = ""
         document.getElementsByClassName("emailError")[0].style.display = "none"
@@ -51,7 +51,7 @@ class App extends React.Component {
       }
 
     }
-    else if(target.name == "name"){
+    else if(target.name === "name"){
       if(target.value.length>0){
         document.getElementsByClassName("nameError")[0].innerHTML = ""
         document.getElementsByClassName("nameError")[0].style.display = "none"
@@ -61,7 +61,7 @@ class App extends React.Component {
         document.getElementsByClassName("nameError")[0].style.display = "block"
       }
     }
-    else if(target.name == "message"){
+    else if(target.name === "message"){
       if(target.value.length>0){
         document.getElementsByClassName("messageError")[0].innerHTML = ""
         document.getElementsByClassName("messageError")[0].style.display = "none"
@@ -76,14 +76,15 @@ class App extends React.Component {
     console.log(this.state)
     fetch('http://jfilipowski.pl:3004/mail',{
         method: "POST",
+        mode:"no-cors",
         body: JSON.stringify(this.state),
         headers: {
-          'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
       }).then(
     	(response) => (response.json())
        ).then((response)=>{
+         console.log("ali")
       if (response.status === 'success'){
         alert("Message Sent."); 
       }else if(response.status === 'fail'){
@@ -99,7 +100,7 @@ class App extends React.Component {
             <div className="navbar">
               <div className="logo">
                 <a href="https://github.com/Arwer234">
-                  <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" alt="/" />
+                  <img src="https://image.flaticon.com/icons/png/512/37/37318.png" alt="/" />
                 </a>
                 <a href = "https://www.linkedin.com/in/jakub-filipowski-9615231aa/">
                   <img src = "https://image.flaticon.com/icons/png/512/61/61109.png" alt = "linkedin"/>
@@ -138,7 +139,7 @@ class App extends React.Component {
               <span className="descriptionHeader">Projects</span>
               <span className="descriptionContent">Project below are mostly based on 3D ideas. During the developement
               process I discovered that both frontend and backend come in handy when it comes to creating
-              apps I imagine, thus I strive to learn both JS frameworks, as well as Node JS's.
+              apps I imagine, thus I strive to learn both JS frameworks, as well as Node JS.
               
               </span>
             </div>
