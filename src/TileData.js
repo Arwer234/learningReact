@@ -28,7 +28,7 @@ export const TileData = {
         {
             id:3,
             name:"JavaScript",
-            src:"https://jaki-jezyk-programowania.pl/img/javascript.png",
+            src:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
             description:"This is JS tile"
         },
         {
@@ -46,7 +46,7 @@ export const TileData = {
         {
             id:7,
             name:"Express.js",
-            src:"https://bachasoftware.com/wp-content/uploads/2019/11/express.js-logo-2-1024x568.jpg",
+            src:"https://expressjs.com/images/express-facebook-share.png",
             description:"This is Express tile"
         },
         {

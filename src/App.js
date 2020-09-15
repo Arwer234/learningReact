@@ -8,7 +8,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = { 
       width: 0, 
       height: 0,
@@ -21,6 +21,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
+    
     window.addEventListener('resize', this.updateWindowDimensions);
   }
 
